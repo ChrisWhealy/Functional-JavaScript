@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+div.showTable { float: left; }
+
+section {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  border: solid black 1px;
+  margin: 1em;
+}
+
+tr:nth-child(even) { background-color: #EEEEEE; }
+
+td {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  padding: 0.25em;
+}
+
+td.right { text-align: right; }
+td.total { text-align: right; font-size: larger; font-weight: bold; }
+</style>
+<script type="text/javascript" src="shopping_list.js"></script>
+</head>
+<body onload="displayScreen()">
+  <div class="showTable">
+    <section>Stock Items</section>
+    <div id="stockListDiv"></div>
+  </div>
+  <div class="showTable">
+    <section>Your Shopping Bill</section>
+    <div id="billDiv"></div>
+  </div>
+</body>
+</html>
